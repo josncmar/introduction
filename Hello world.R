@@ -150,3 +150,20 @@ seq2
 seq3 <- seq(6,55, 6+8/7)
 seq3
 length(seq3)
+a <- seq(1L, 10, 0.5)
+class(a)
+a <- seq(1, 10)
+class(a)
+
+library(dslabs)
+data(murders)
+sort(murders$total)
+ind <- order(murders$total) 
+murders$state[ind]
+
+max(murders$total)
+i_max <- which.max(murders$total)
+murders$state[i_max]
+
+x <- c(31, 4, 15, 92, 65)
+rank(x)
