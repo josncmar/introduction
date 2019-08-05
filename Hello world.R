@@ -104,6 +104,49 @@ c
 class(murders$region)
 
 length(levels(region))
-
-
 table(murders$region)
+
+codes <- c(italy = 380, canada = 124, egypt = 818)
+codes
+class(codes)
+names(codes)
+
+codes <- c(380, 124, 818)
+country <- c("italy","canada","egypt")
+names(codes) <- country
+codes
+
+codes[2]
+codes[c(1,3)]
+x <- c(1, "canada", 3)
+x
+class(x)
+x <- c("1", "b", "3")
+as.numeric(x)
+
+temp
+
+#Use the function c to create a vector with the average high temperatures in January for Beijing, 
+#Lagos, Paris, Rio de Janeiro, San Juan and Toronto, which are 35, 88, 42, 84, 81, and 30 degrees 
+#Fahrenheit. Call the object temp
+
+
+temp <- c(35, 88, 42, 84, 81, 30)
+temp
+city <- c("Beigin", "Lagos", "Paris", "Rio_de_janerio", "San_juan", "Toronto")
+city
+names(temp) <- city
+temp
+temp[1:3]
+temp[c(1,2,3)]
+
+seq1 <- seq(12,73)
+seq1
+
+seq2 <- seq(1,100,2)
+seq2
+
+
+seq3 <- seq(6,55, 6+8/7)
+seq3
+length(seq3)
