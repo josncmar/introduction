@@ -167,3 +167,180 @@ murders$state[i_max]
 
 x <- c(31, 4, 15, 92, 65)
 rank(x)
+
+x <- c(1,2,3)
+y <- c(10, 20, 30, 40, 50, 60, 70)
+x+y
+
+library(dslabs)
+data("murders")
+murders
+
+pop <- murders$population
+sort(pop)
+i_min <- which.min(murders$total)
+murders$state[i_min]
+
+pop <- murders$population
+order_pop <- order(pop)
+order_pop
+i_min <- which.min(murders$total)
+order_pop[which.min(murders$total)]
+state_v <- murders$state
+population <- murders$population
+sort(population)
+state[order_pop[which.min(murders$total)]]
+population[order_pop[which.min(murders$total)]]
+
+which.min(population)
+
+order <- which.min(population)
+order
+state[order]
+population[order]
+
+
+#Dataframe
+library(dslabs)
+data("murders")
+state_v <- murders$state
+population_v <- murders$population
+murders_v <- murders$total
+ranks <- rank(murders$population)
+
+my_df2 <- data.frame(state_v, population_v, murders_v, ranks)
+my_df2
+
+newdata <- my_df2[order(ranks),] 
+
+newdata
+data("na_example")  
+str(na_example)
+sum(na_example)
+na_example
+ind <- is.na(na_example)
+ind
+
+sum(1:5, NA, ind != TRUE)
+
+na_example[ind]
+
+
+result <- if (isFALSE(ind)){na_example}
+result
+
+
+tr <- c(ind==FALSE)
+fl <- c(ind==TRUE)
+sum_tr <- sum(tr)
+sum_fl <- sum(fl)
+my_df3 <- data.frame(sum_tr,sum_fl)
+my_df3
+names_df <- c("TRUE", "FALSE")
+names(my_df3) <- names_df
+my_df3
+
+
+data("na_example")  
+str(na_example)
+sum(na_example)
+na_example
+ind <- is.na(na_example)
+ind
+
+
+sum(na_example, na.rm = TRUE)
+
+
+#Data frame II
+
+state_v <- murders$state
+population_v <- murders$population
+murders_v <- murders$total
+ranks <- rank(murders$population)
+murder_population <- murders_v/population_v
+
+my_df2 <- data.frame(state_v, population_v, murders_v,murder_population, ranks)
+my_df2
+
+newdata <- my_df2[order(murder_population),]
+newdata
+
+seq(1, 10)
+codes[2]
+codes
+
+x <- c("1", "b", "3")
+as.numeric(x)
+
+temp
+
+sort(murders$total)
+ind <- order(murders$total) 
+murders$abb[ind] 
+i_max <- which.max(murders$total)
+murders$state[i_max]
+murders
+pop <- murders$population
+sort(murders$population)
+i_min <- which.min(murders$population)
+murders$population[i_min]
+ord
+murders[ord]
+
+
+murders$abb
+ord <- order(murders$population)
+ord
+murders$abb[ord]
+
+
+ind_min <- which.min(murders$population)
+
+murders$state
+murders$state[ind_min]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
